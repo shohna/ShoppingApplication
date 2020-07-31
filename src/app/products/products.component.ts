@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
-import { Product } from '../product.model';
-import { CategoryService } from '../category.service';
-import { SellerService } from '../sellers.service';
+import { ProductService } from '../services/product.service';
+import { Product } from '../models/product.model';
+import { CategoryService } from '../services/category.service';
+import { SellerService } from '../services/sellers.service';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
