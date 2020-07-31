@@ -1,0 +1,21 @@
+<h2>My Cart</h2>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Price</th>
+      <td></td>
+    </tr>
+  </thead>
+  <tr *ngFor="let c of cart">
+    <td>{{ c.name }}</td>
+    <td>{{ c.price }}</td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="onDelete(c)">
+        Delete
+      </button>
+    </td>
+  </tr>
+</table>
+<h6>Total: {{ total }}</h6>
